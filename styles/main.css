@@ -5,7 +5,6 @@ body {
 header {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: 20px 10px;
     position: absolute;
     top: 0;
     right: 0;
@@ -26,7 +25,7 @@ header a {
 header a.logo {
     font-size: 25px;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 40px;
 }
 
 header a:hover {
@@ -41,6 +40,7 @@ header a.active {
 
 .header-right {
     float: right;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 500px) {
@@ -53,3 +53,21 @@ header a.active {
         float: none;
     }
 }
+
+.clearfix {
+  overflow: auto;
+  border: 1px solid red;
+  background-color: lightgray;
+}
+
+.center {
+  padding: 10px;
+  text-align: center;
+}
+.logo-icon {
+    position: absolute;
+    left: 20px;
+    padding: 5px;
+    margin: auto;
+    z-index: 1;
+  }
