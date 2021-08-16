@@ -1,8 +1,20 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>404 Not Found</title>
   </head>
   <body>
-    <h1 style="color: red;">404 Not Found</h1>
+    <div style="margin: 20px;">
+      <h1 style="color: red;">Oops 404!</h1>
+      <br>
+      <b>The page you are looking for may have been renamed or does not exist in this server.</b>
+      <br>
+      <br>
+      <b>You will be redirected to homepage shortly.</b>
+    </div>
+    <script>
+      blogger_redirect = setTimeout(function() { location.pathname= "/" }, 7000);
+    </script>
   </body>
 </html>
