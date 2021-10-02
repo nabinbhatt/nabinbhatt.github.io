@@ -1,6 +1,7 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Nabin Bhatt",
+  "short_name": "nabinbhatt",
+  "description": "I am a Tech Enthusiastic web developer, UX and UI designer from Nepal.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
