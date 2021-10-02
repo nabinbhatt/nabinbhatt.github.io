@@ -63,5 +63,13 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "https://www.bhattnabin.com.np",
-  "orientation": "any"
+  "orientation": "any",
+  "categories": ["education"],
+  "shortcuts" : [
+    {
+      "name": "Nabin's Blog",
+      "url": "/blog",
+      "description": "blog posts by Nabin Bhatt"
+    }
+  ]
 }
