@@ -71,5 +71,12 @@
       "url": "/blog",
       "description": "blog posts by Nabin Bhatt"
     }
+  ],
+  "screenshots" : [
+    {
+      "src": "/assets/images/screenshot.png",
+      "sizes": "1280x1280",
+      "type": "image/png"
+    }
   ]
 }
