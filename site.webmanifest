@@ -69,7 +69,14 @@
     {
       "name": "Nabin's Blog",
       "url": "/blog",
-      "description": "blog posts by Nabin Bhatt"
+      "description": "blog posts by Nabin Bhatt",
+      "icons": [
+        {
+          "src": "/assets/icons/96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ],
   "screenshots" : [
