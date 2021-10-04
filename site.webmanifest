@@ -62,7 +62,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "https://www.bhattnabin.com.np",
+  "start_url": "https://www.bhattnabin.com.np/?utm_source=homescreen&utm_medium=shortcut",
   "orientation": "any",
   "categories": ["education"],
   "shortcuts" : [
@@ -81,9 +81,15 @@
   ],
   "screenshots" : [
     {
-      "src": "/assets/images/screenshot.png",
-      "sizes": "1280x1280",
+      "src": "/assets/images/www.bhattnabin.com.np_(Galaxy S5).png",
+      "sizes": "1080x1920",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/www.bhattnabin.com.np_blog_(Galaxy S5).png",
+      "sizes": "1080x1920",
       "type": "image/png"
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }
