@@ -1,4 +1,1 @@
 ErrorDocument 404 /404.html
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^bhattnabin.com.np [NC]
-RewriteRule ^(.*)$ https://www.bhattnabin.com.np/$1 [L,R=301]
