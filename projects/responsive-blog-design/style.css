@@ -1,0 +1,200 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&display=swap');
+
+/* styling the header and navigation  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    background: rgb(17, 40, 103);
+    background: linear-gradient(160deg, rgba(17, 40, 103, 1) 0%, rgba(26, 22, 116, 1) 100%);
+    width: 100%;
+    height: 15rem;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#header h1 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#header p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+#navbar {
+    background-color: black;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+section h2 {
+    display: block;
+    margin: auto;
+    width: max-content;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    font-family: cursive;
+    font-size: 1.8rem;
+}
+
+.post__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 8px;
+    box-shadow: 0px 0px 2px 1px red;
+}
+
+.post__tag {
+    background-color: #1857c6;
+    padding: 10px;
+    font-size: 1.2em;
+    letter-spacing: 0.5em;
+    color: white;
+    font-weight: 700;
+    border-radius: 0.3em;
+    text-align: center;
+}
+
+.post h3 {
+    font-family: 'Alumni Sans', sans-serif;
+    margin: 10px 0;
+}
+
+.post img {
+    width: 20em;
+    display: block;
+    margin: auto;
+}
+
+.post p {
+    margin: 10px 0;
+}
+
+.btn__view {
+    padding: 10px;
+    background-color: rgb(24, 71, 226);
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    border: 1px solid rgb(36, 33, 206);
+    cursor: pointer;
+}
+
+.btn__view:hover {
+    color: black;
+    background-color: honeydew;
+}
+
+.form__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__container div {
+    padding: 15px 3px;
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+[type="text"],
+[type="email"],
+[type="tel"] {
+    background-color: #fc9e01;
+    padding: 15px 10px;
+    color: white;
+}
+
+[type="text"]::placeholder,
+[type="email"]::placeholder,
+[type="tel"]::placeholder {
+    color: white;
+}
+
+[type="submit"] {
+    padding: 10px;
+    background-color: #fc9e01;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    #header h1 {
+        font-size: 1.4rem;
+    }
+
+    #header p {
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+    .form__container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .post__container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .post img {
+        width: 15em;
+    }
+}
