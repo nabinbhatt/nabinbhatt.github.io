@@ -1,0 +1,296 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #ffffff;
+    --color2: #000000;
+    --bg1: #a9ceff;
+    --bg2: #a00dad;
+    --bg3: #3f3f3f;
+}
+
+.header,
+.header p {
+    display: block;
+    width: max-content;
+    margin: auto;
+    padding: 15px 0px;
+}
+
+#navbar {
+    background-color: var(--color2);
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 10px;
+}
+
+#navbar ul li {
+    padding: 16px 0;
+}
+
+#navbar ul li a {
+    color: var(--color1);
+    text-decoration: none;
+    padding: 17px 10px;
+}
+
+#navbar ul li a:is(:hover, :focus) {
+    color: var(--color2);
+    background-color: var(--color1);
+}
+
+.section-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+}
+
+.about {
+    width: 30vw;
+    padding: 34px 5px;
+}
+
+.about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.blog {
+    width: 60vw;
+    padding: 34px 5px;
+}
+
+.post-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.post {
+    padding: 34px;
+    box-shadow: 0px 0px 4px 0px var(--bg3);
+    width: 28vw;
+}
+
+.post-tag {
+    background-color: var(--bg2);
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color1);
+    display: inline-block;
+}
+
+.post-date {
+    display: block;
+    margin: 10px 0;
+}
+
+.author-info {
+    display: inline-block;
+}
+
+.post-author {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.post-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.bottom-section {
+    display: flex;
+    gap: 1em;
+}
+
+.popular-posts {
+    padding: 0 34px;
+    width: 80%;
+}
+
+.posts {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    gap: 2em;
+}
+
+.posts img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.post-heading {
+    color: var(--bg2);
+    text-decoration: none;
+}
+
+.post-heading:is(:hover, :focus) {
+    color: var(--color2);
+    text-decoration: underline;
+}
+
+.tags {
+    padding: 0 34px;
+}
+
+.tag {
+    background-color: royalblue;
+    padding: 5px;
+}
+
+.form-container {
+    padding: 34px;
+}
+
+[type="text"],
+[type="email"],
+textarea {
+    border: 1px solid var(--bg2);
+    border-radius: 3px;
+    padding: 9px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-item {
+    margin: 10px;
+}
+
+.submit {
+    margin: 27px 0 !important;
+}
+
+.btn {
+    background-color: royalblue;
+    color: var(--color1);
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 0;
+    transition: background-color 110ms ease-in-out;
+}
+
+footer {
+    background-color: rgb(1, 5, 15);
+    color: var(--color1);
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    gap: 1em;
+}
+
+.social-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1em;
+}
+
+.social-container ul li a {
+    font-size: 25px;
+    color: var(--color1);
+}
+
+.fa-facebook:hover {
+    color: #00f;
+}
+
+.fa-instagram:hover {
+    color: #ff0000;
+}
+
+.fa-twitter:hover {
+    color: #0000ff;
+}
+
+.view-more {
+    border-radius: 3px;
+    font-size: 19px;
+}
+
+.view-more:is(:hover, :focus) {
+    background-color: var(--bg1);
+    color: var(--color2);
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .post {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about {
+        width: 100vw;
+        padding: 34px;
+    }
+    
+    .blog {
+        width: 100vw;
+        padding: 34px;
+    }
+    
+    .post {
+        width: 90vw;
+    }
+    
+    .posts, .bottom-section, .form, footer {
+        flex-direction: column;
+    }
+
+    [type="text"],
+    [type="email"],
+    textarea {
+        width: 100%;
+    }
+
+    .popular-posts {
+        width: 100%;
+    }
+
+    .bottom-section {
+        align-items: center;
+    }
+}
