@@ -62,7 +62,7 @@
   "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "start_url": "https://www.bhattnabin.com.np/?utm_source=homescreen&utm_medium=shortcut",
+  "start_url": "https://www.bhattnabin.com.np/?utm_source=pwa_install",
   "orientation": "any",
   "categories": ["education"],
   "shortcuts" : [
