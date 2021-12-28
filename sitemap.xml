@@ -18,14 +18,39 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://www.bhattnabin.com.np/about.html</loc>
+  <lastmod>2021-08-10T10:44:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://www.bhattnabin.com.np/blog/</loc>
   <lastmod>2021-08-10T10:44:52+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.bhattnabin.com.np/projects/responsive-blog-design/ </loc>
-  <lastmod>2021-10-29T10:44:52+00:00</lastmod>
+  <loc>https://www.bhattnabin.com.np/projects/</loc>
+  <lastmod>2021-12-29T12:15:52+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bhattnabin.com.np/amp/</loc>
+  <lastmod>2021-12-29T12:15:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.bhattnabin.com.np/projects/responsive-blog-design/</loc>
+  <lastmod>2021-10-29T10:44:52+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.bhattnabin.com.np/projects/flexbox-blog-layout/</loc>
+  <lastmod>2021-10-29T10:44:52+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://www.bhattnabin.com.np/projects/tictactoe/</loc>
+  <lastmod>2021-10-29T10:44:52+00:00</lastmod>
+  <priority>0.70</priority>
 </url>
 
 
