@@ -1,301 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nabin Bhatt - A Passionate Web Developer from Nepal</title>
-  <meta name="description"
-    content="Hi there, this is Nabin Bhatt, a tech enthusiast, web designer and web developer from Nepal.">
-  <meta property="fb:pages" content="109581897184091" />
-  <meta name="theme-color" content="#ffffff" />
-  <link rel="amphtml" href="https://www.bhattnabin.com.np/amp/index.html" />
-  <link rel="stylesheet" href="/assets/styles/main.css">
-  <link href="tailwind.css" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
-  <link rel="shortcut icon" href="/assets/icons/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="preconnect" href="https://connect.facebook.net">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ENY1C32Y07"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ENY1C32Y07');
-  </script>
-</head>
-
-<body>
-  <!-- Messenger Chat Plugin Code -->
-  <div id="fb-root"></div>
-
-  <!-- Your Chat Plugin code -->
-  <div id="fb-customer-chat" class="fb-customerchat">
-  </div>
-
-  <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "109581897184091");
-    chatbox.setAttribute("attribution", "biz_inbox");
-
-    window.fbAsyncInit = function () {
-      FB.init({
-        xfbml: true,
-        version: 'v12.0'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <header class="text-gray-400 bg-gray-900 body-font header">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a href="index.html" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-        <img src="/assets/icons/android-chrome-512x512.png" width="32px" height="32px" alt="logo-icon">
-        <span class="ml-3 text-xl">Nabin Bhatt</span>
-      </a>
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <a href="index.html" class="mr-5 hover:text-white">Home</a>
-        <a href="https://me.bhattnabin.com.np" class="mr-5 hover:text-white">About</a>
-        <a href="#contact-me" class="mr-5 hover:text-white">Contact</a>
-        <a href="blog/" class="mr-5 hover:text-white">Blog</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Nabin's Blog - Nabin Bhatt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f795083806.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="home">
+      <nav class="navbar-container">
+        <div class="left-nav">
+          <a href="/" style="height: 35px;"><img src="logo.png" alt="Nabin Bhatt" /></a>
+        </div>
+        <ul id="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <div class="right-nav">
+          <input type="checkbox" name="theme" id="changeTheme" />
+        </div>
       </nav>
-      <button onclick="location.replace('#follow-me')"
-        class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Follow
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button>
-    </div>
-  </header>
 
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 pt-24 mx-auto">
-      <div class="flex flex-col text-center w-full">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Welcome!</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Hi there, this is Nabin Bhatt.A technology enthusiast from
-          Nepal who loves the path of web development.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="introduction to html banner"
-        src="/assets/images/html.jpg">
-      <div class="text-center lg:w-2/3 w-full">
-        <h class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Introduction To HTML</h2>
-          <p class="leading-relaxed mb-8">HTML stands for Hyper Text Markup Language. HTML is the standard markup
-            language for creating Web pages...</p>
-          <div class="flex justify-center">
-            <button onclick="window.location.replace('blog/introduction-to-html.html')"
-              class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Read
-              More</button>
-            <button onclick="window.location.replace('blog/')"
-              class="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Blog</button>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="text-gray-400 bg-gray-900 body-font">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8"
-          viewBox="0 0 975.036 975.036">
-          <path
-            d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
-          </path>
-        </svg>
-        <p class="leading-relaxed text-lg">Your time is limited, so don't waste it living someone else's life. Don't be
-          trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of others'
-          opinions drown out your own inner voice. And most important, have the courage to follow your heart and
-          intuition.</p>
-        <span class="inline-block h-1 w-10 rounded bg-blue-500 mt-8 mb-6"></span>
-        <h2 class="text-white font-medium title-font tracking-wider text-sm">CEO, Apple Inc.</h2>
-        <p class="text-gray-500">Steve Jobs</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact-me" class="text-gray-400 bg-gray-900 body-font relative">
-    <div class="container px-5 py-24 mx-auto">
-      <form action="">
-        <div class="flex flex-col text-center w-full mb-12">
-          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Contact Me</h2>
-          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Want to Get in Touch? or, Want to Send a Feedback? I
-            would love to hear from you.</p>
+      <section class="banner">
+        <div class="video-bg">
+          <video src="banner.mp4" class="banner-video" autoplay loop muted poster="poster.png"></video>
         </div>
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div class="flex flex-wrap -m-2">
-            <div class="p-2 w-1/2">
-              <div class="relative">
-                <label for="name" class="leading-7 text-sm text-gray-400">Name</label>
-                <input type="text" id="name" name="name"
-                  class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  disabled>
-              </div>
-            </div>
-            <div class="p-2 w-1/2">
-              <div class="relative">
-                <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-                <input type="email" id="email" name="email"
-                  class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  disabled>
-              </div>
-            </div>
-            <div class="p-2 w-full">
-              <div class="relative">
-                <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
-                <textarea id="message" name="message"
-                  class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  disabled></textarea>
-              </div>
-            </div>
-            <div class="p-2 w-full">
-              <button type="submit" name="submit"
-                class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
-                disabled>Submit</button>
-            </div>
-            <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
-              <p>Sorry, I am working on this form. Please click on the email below to contact me! Thank You
-                <a href="mailto:info@bhattnabin.com.np" class="text-blue-400">info@bhattnabin.com.np</a><br />
-                <span id="follow-me" class="inline-flex py-4">
-                  <a href="https://www.facebook.com/thenabinbhatt" class="text-gray-500 facebook">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      class="w-5 h-5" viewBox="0 0 24 24">
-                      <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                    </svg>
-                  </a>
-                  <a href="https://www.twitter.com/thenabinbhatt" class="ml-4 text-gray-500 twitter">
-                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      class="w-5 h-5" viewBox="0 0 24 24">
-                      <path
-                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                      </path>
-                    </svg>
-                  </a>
-                  <a href="https://www.instagram.com/thenabinbhatt" class="ml-4 text-gray-500 instagram">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                      stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                      <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                    </svg>
-                  </a>
-                </span>
-            </div>
+        <div class="video-overlay"></div>
+        <div class="home-container">
+            <h1 class="intro">
+              <span class="sm-14">Hello, I'm</span><br />Nabin Bhatt
+            </h1>
+            <p class="sm-16">Front-End Web Developer and UX/UI Designer</p>
+            <a href="/contact.html" class="btn contact">
+              <i class="far fa-paper-plane"></i>Contact Me
+            </a>
           </div>
+          <div class="center">
+            <a href="#about-me" class="slide-btn">
+              <i class="fas fa-chevron-down fa-2x"></i>
+              <span>Jump to next section</span>
+            </a>
         </div>
-      </form>
-    </div>
-  </section>
+      </section>
+    </header>
 
-  <footer class="text-gray-400 bg-gray-900 body-font footer">
-    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-      <a href="https://www.bhattnabin.com.np/"
-        class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32px" height="32px"
-          viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
-          <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ffffff" stroke="none">
-            <path d="M381 5100 c-91 -24 -149 -57 -221 -126 -72 -69 -115 -142 -140 -238
-                    -20 -78 -20 -106 -20 -2176 0 -2070 0 -2098 20 -2176 25 -96 68 -169 140 -238
-                    73 -70 131 -102 225 -126 77 -20 111 -20 2175 -20 2070 0 2098 0 2176 20 96
-                    25 169 68 238 140 70 73 102 131 126 225 20 77 20 111 20 2175 0 2064 0 2098
-                    -20 2175 -24 94 -56 152 -126 225 -69 72 -142 115 -238 140 -78 20 -105 20
-                    -2180 19 -2045 0 -2103 -1 -2175 -19z m922 -1939 l502 -1173 3 1176 2 1176
-                    210 0 210 0 -2 -1782 -3 -1783 -160 0 -159 0 -511 1211 -510 1212 -3 -1214 -2
-                    -1214 -210 0 -210 0 0 1785 0 1785 171 -2 171 -3 501 -1174z m2522 1168 c239
-                    -29 392 -95 520 -223 165 -165 235 -389 222 -711 -6 -152 -15 -209 -53 -327
-                    -60 -185 -197 -314 -383 -361 l-55 -14 78 -26 c156 -53 268 -134 357 -260 160
-                    -228 202 -640 104 -1027 -9 -36 -39 -112 -67 -170 -45 -92 -63 -116 -142 -195
-                    -105 -103 -197 -158 -337 -199 -139 -40 -244 -46 -774 -46 l-495 0 0 1785 0
-                    1785 468 0 c278 0 503 -5 557 -11z" />
-            <path d="M3300 3410 l0 -563 223 6 c230 7 307 18 391 57 99 47 156 124 193
-                    260 14 52 18 104 18 265 0 178 -2 208 -22 270 -26 83 -56 127 -117 170 -85 60
-                    -195 80 -503 92 l-183 6 0 -563z" />
-            <path d="M3300 1799 l0 -672 238 6 c311 8 401 28 499 112 108 92 172 384 145
-                    662 -27 271 -106 419 -266 498 -101 50 -193 64 -423 65 l-193 0 0 -671z" />
-          </g>
-        </svg>
-        <span class="ml-3 text-xl">Nabin Bhatt</span>
-      </a>
-      <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2020 Made
-        with ❤ —
-        <a href="https://twitter.com/thenabinbhatt" class="text-gray-500 ml-1" target="_blank"
-          rel="noopener noreferrer">@thenabinbhatt</a>
-      </p>
-      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a href="https://facebook.com/thenabinbhatt" class="text-gray-400">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-            viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-          </svg>
-        </a>
-        <a href="https://twitter.com/thenabinbhatt" class="ml-3 text-gray-400">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-            viewBox="0 0 24 24">
-            <path
-              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-            </path>
-          </svg>
-        </a>
-        <a href="https://instagram.com/thenabinbhatt" class="ml-3 text-gray-400">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="w-5 h-5" viewBox="0 0 24 24">
-            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-          </svg>
-        </a>
-      </span>
-    </div>
-    <!-- Put this code anywhere in the body of your page where you want the badge to show up. -->
+    <section id="about-me">
+      <div class="about-left">
+        <img src="profile.jpg" alt="" class="profile" />
+      </div>
+      <div class="about-right">
+        <h2>About Me</h2>
+        <p class="sm-18">
+          Hello, my name is Nabin Bhatt, 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id unde
+          possimus quae enim error magnam natus commodi? Dolore maxime adipisci
+          non tempora ducimus.
+        </p>
+        <p class="sm-18">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+          laudantium quod commodi!
+        </p>
+        <a href="https://linkedin.com/in/nabinbhatt" class="btn"
+          ><i class="fab fa-linkedin"></i>Linkedin</a
+        >
+        <a href="/resume.pdf" class="btn"><i class="fas fa-file"></i>Resume</a>
+      </div>
+    </section>
 
-<div itemscope itemtype='http://schema.org/Person' class='fiverr-seller-widget' style='display: inline-block;'>
-  <a itemprop='url' href=https://www.fiverr.com/thenabinbhatt rel="nofollow" target="_blank" style='display: inline-block;'>
-     <div class='fiverr-seller-content' id='fiverr-seller-widget-content-96f31f1e-918d-48bc-9964-9fa333da41d6' itemprop='contentURL' style='display: none;'></div>
-     <div id='fiverr-widget-seller-data' style='display: none;'>
-         <div itemprop='name' >thenabinbhatt</div>
-         <div itemscope itemtype='http://schema.org/Organization'><span itemprop='name'>Fiverr</span></div>
-         <div itemprop='jobtitle'>Seller</div>
-         <div itemprop='description'>Front-end web developer, developing responsive landing pages and more. I have good knowledge of HTML, CSS and JavaScript and Search Engine Optimization</div>
-     </div>
- </a>
-</div>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+        <div>
+          <h3>Project Name</h3>
+          <p class="project-details sm-16">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+            adipisci exercitationem! Quibusdam beatae ipsa incidunt.
+          </p>
+          <a href="#" class="btn"><i class="fas fa-eye"></i>Live</a
+          ><a href="#" class="btn"><i class="fas fa-code"></i>Code</a>
+        </div>
+      </div>
+    </section>
 
-<script id='fiverr-seller-widget-script-96f31f1e-918d-48bc-9964-9fa333da41d6' src='https://widgets.fiverr.com/api/v1/seller/thenabinbhatt?widget_id=96f31f1e-918d-48bc-9964-9fa333da41d6' data-config='{"category_name":"Graphics \u0026 Design"}' async='true' defer='true'></script>
+    <section id="services">
+      <h2>Services</h2>
+      <div class="services-flex">
+        <div class="service-box">
+          <h3><i class="fas fa-file-code"></i> Website Creation</h3>
+          <p class="sm-16">
+            Remember me for professional, attractive, responsive and fully SEO optimized website.
+          </p>
+        </div>
+        <div class="service-box">
+          <h3><i class="fas fa-mobile"></i> Responsive Sites</h3>
+          <p class="sm-16">
+            I will design a creative website layouts and convert it into fully working responsive template.
+          </p>
+        </div>
+        <div class="service-box">
+          <h3><i class="fas fa-pencil-ruler"></i> UX/UI Design</h3>
+          <p class="sm-16">
+            I will produce high quality visual designs from concept to execution for both mobile and desktop devices.
+          </p>
+        </div>
+        <div class="service-box">
+          <h3><i class="fas fa-search"></i> SEO Optimization</h3>
+          <p class="sm-16">
+            I will provide SEO service with google top ranking & keyword research.
+          </p>
+        </div>
+      </div>
+    </section>
 
-  </footer>
-  <script src="app.js"></script>
-  <script type="application/ld+json">
-        {
-          "@context": "https://schema.org/",
-          "@type": "Person",
-          "name": "Nabin Bhatt",
-          "url": "https://bhattnabin.com.np",
-          "image": "https://www.bhattnabin.com.np/assets/images/profile.jpg",
-          "sameAs": [
-            "https://facebook.com/thenabinbhatt",
-            "https://twitter.com/thenabinbhatt",
-            "https://instagram.com/thenabinbhatt",
-            "https://linkedin.com/in/nabinbhatt",
-            "https://pinterest.com/thenabinbhatt",
-            "https://soundcloud.com/nabinbhatt",
-            "https://github.com/nabinbhatt",
-            "https://bhattnabin.com.np"
-          ]  
-        }
-        </script>
-</body>
+    <section id="skills">
+      <div class="skill-left">
+        <h2>Skills</h2>
+        <p class="sm-16">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+          molestiae, eos laboriosam deleniti dicta repudiandae. Quam harum
+          fugiat asperiores enim!
+        </p>
+      </div>
+      <div class="skills-right">
+        <div class="skill-box">
+          <i class="fab fa-html5 fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-css3-alt fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-js-square fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-git-alt fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-bootstrap fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-sass fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-react fa-3x"></i>
+        </div>
+        <div class="skill-box">
+          <i class="fab fa-node-js fa-3x"></i>
+        </div>
+      </div>
+    </section>
 
+    <footer id="footer">
+      <div class="social-container">
+        <div class="social-box">
+          <a href="https://bhattnabin.com.np/github"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+        <div class="social-box">
+          <a href="https://twitter.com/thenabinbhatt"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+        <div class="social-box">
+          <a href="https://bhattnabin.com.np/linkedin"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <a href="#home" class="top"
+          ><i class="fas fa-arrow-circle-up fa-3x"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </body>
 </html>

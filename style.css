@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Bad+Script&family=Bungee+Hairline&family=Nova+Square&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+/* fonts  */
+/* 
+    font-family: 'Amita', cursive;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Bungee Hairline', cursive;
+    font-family: 'Nova Square', cursive;
+*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #121212;
+    color: #f2f2f2;
+}
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #070720;
+    color: #00D5FF;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 1;
+}
+.left-nav {
+    width: 35px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.left-nav img {
+    width: inherit;
+    height: 35px;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+#navbar li {
+    margin: 0 2px;
+}
+#navbar li a {
+    padding: 10px 12px;
+    color: inherit;
+    text-decoration: none;
+}
+#navbar li a:is(:focus, :hover) {
+    background-color: #00024A;
+    color: #00FF2E;
+}
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6em;
+    color: #0084FF;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1d1d1d;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+}
+.video-bg, .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+}
+.video-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+.video-bg video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-container {
+    position: relative;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.5em;
+    gap: 0.5em;
+}
+.intro {
+    font-size: 3em;
+    line-height: 0.8em;
+}
+.intro span {
+    font-family: 'Roboto Mono', monospace;
+}
+.sm-14 {
+    font-size: 0.3em;
+    letter-spacing: 0.3em;
+}
+.sm-16 {
+    line-height: 3em;
+    font-size: 0.8em;
+    letter-spacing: 0.01em;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    padding: 0.8em;
+    color: #00FF2E;
+    text-decoration: none;
+    border-radius: 0.8em;
+    display: inline-block;
+    margin-right: 0.5em;
+    border: 1px solid #00024A;
+    backdrop-filter: blur(5px);
+    transition: 0.1s background-color;
+}
+.btn svg {
+    margin-right: 0.5em;
+}
+.contact:is(:focus, :hover),
+.btn:is(:focus, :hover) {
+    background-color: #000239;
+}
+.slide-btn svg {
+    animation-name: slide;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    color: #58AEFF;
+}
+.slide-btn span {
+    display: none;
+}
+@keyframes slide {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 0.1;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0px, 25px);
+        opacity: 0.1;
+    }
+}
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    background-color: #121212;
+    color: #fff600;
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5em;
+    
+}
+.about-right {
+    max-width: 50vw;
+}
+.about-right a {
+    font-family: 'Ubuntu', sans-serif;
+}
+.about-right p {
+    margin: 25px 0;
+}
+.about-right h2 {
+    line-height: 1;
+}
+#projects h2 {
+    text-align: center;
+}
+#projects {
+    background-color: #170025;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+}
+#projects h2 {
+    font-size: 2em;
+    font-family: 'Bungee Hairline', cursive;
+}
+.projects-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.projects-grid div {
+    background-color: #020303;
+    color: #CFE9FF;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 1em;
+}
+#services {
+    background-color: #021400;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.services-flex {
+    display: flex;
+}
+.service-box {
+    background-color: #0B0101;
+    color: #A9FBB0;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#skills {
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #001824;
+    font-size: 1.3em;
+}
+.skill-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50vw;
+}
+.skills-right {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 1.5em;
+    margin: 0 2em;
+}
+#footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vw;
+}
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-box {
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.profile {
+    width: 300px;
+    height: auto;
+    border-radius: 150px;
+    border: 10px solid rgb(252, 218, 29);
+    padding: 5px;
+}
